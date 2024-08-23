@@ -1,0 +1,1 @@
+void run_simple(const char * file);
