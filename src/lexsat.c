@@ -7,8 +7,9 @@
 char *prog;
 
 void usage(void) {
-    fprintf(stderr, "Usage: %s [options] dimacs", prog);
-    fprintf(stderr, "-h, --help\tShow this.", prog);
+    fprintf(stderr, "Usage: %s [options] dimacs\n\n", prog);
+    fprintf(stderr, "Basic LEXSAT solver.\n\n", prog);
+    fprintf(stderr, "\t-h, --help\tShow this.\n", prog);
     exit(EXIT_FAILURE);
 }
 
