@@ -6,3 +6,10 @@ void error(const char * err) {
     fprintf(stderr, "ERROR: %s", err);
     exit(EXIT_FAILURE);
 }
+
+static void print_lits(CaDiCaL::Solver *solver) {
+    for (int i = 1; i <= solver->vars(); ++i) {
+        printf("%d ", solver->val(i));
+    }
+    printf("\n");
+}

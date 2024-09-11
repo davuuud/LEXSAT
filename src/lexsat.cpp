@@ -3,7 +3,6 @@
 #include <strings.h>
 #include <assert.h>
 #include <errno.h>
-#include "cadical.hpp"
 #include "simple.hpp"
 
 char *prog;
