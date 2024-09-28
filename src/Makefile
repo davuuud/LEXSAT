@@ -1,4 +1,4 @@
-CC = g++
+CXX = g++
 DEFS = 
 INCLUDES = -I../lib
 CFLAGS = -pedantic -Wall -Wextra $(DEFS) $(INCLUDES)
@@ -15,10 +15,10 @@ all: lexsat
 lexsat: $(OBJECTS)
 
 %: %.o
-	$(CC) -o $@ $^ $(LDFLAGS)
+	$(CXX) -o $@ $^ $(LDFLAGS)
 
 %.o: %.cpp
-	$(CC) -c $(CFLAGS) $< -o $@
+	$(CXX) -c $(CFLAGS) $< -o $@
 
 clean:
 	rm $(OBJECTS)
