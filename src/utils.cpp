@@ -3,7 +3,7 @@
 #include "utils.hpp"
 
 void error(const char * err) {
-    fprintf(stderr, "ERROR: %s", err);
+    perror(err);
     exit(EXIT_FAILURE);
 }
 
