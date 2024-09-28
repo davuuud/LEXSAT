@@ -21,4 +21,4 @@ lexsat: $(OBJECTS)
 	$(CC) -c $(CFLAGS) $< -o $@
 
 clean:
-	rm lexsat $(OBJECTS)
+	rm $(OBJECTS)
